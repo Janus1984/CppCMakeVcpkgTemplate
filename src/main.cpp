@@ -1,12 +1,12 @@
 // main.cpp
+#include <fmt/core.h>
 #include <sqlite3.h>
 #include <cstdio>
-#include <fmt/core.h>
 
 // main function!
 int main()
 {
     fmt::print("Hello, world!\n");
-    printf("%s\n", sqlite3_libversion());
+    fmt::print("{}\n", sqlite3_libversion());
     return 0;
 }
